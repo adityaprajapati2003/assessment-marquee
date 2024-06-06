@@ -1,0 +1,104 @@
+.personal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ACE1AF;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header-my{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+.my-label{
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #013220;
+    margin-bottom: 1rem;
+}
+
+.my-books-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.bookcard-wrapper-2{
+    width: 20%;
+    margin: 1rem;
+}
+
+.go-back{
+    background-color: #013220;
+    color: #ACE1AF;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.go-back:hover{
+    color: #013220;
+    background-color: #ACE1AF;
+}
+
+@media screen and (max-width:800px) {
+
+    .my-label{
+        font-size: 1.1rem;
+    }
+    
+    .bookcard-wrapper-2{
+        width: 20%;
+        margin: 2rem;
+    }
+    
+    .go-back{
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .bookcard-wrapper-2{
+        width: 35%;
+        margin: 1rem;
+    }
+    
+    .my-books-wrapper{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .search-input{
+        width: 85%;
+    }
+
+    .my-books-wrapper{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .bookcard-wrapper-2{
+        width: 35%;
+        margin: 1rem;
+        margin-left: -1rem;
+    }
+}
+

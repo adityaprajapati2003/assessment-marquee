@@ -1,0 +1,154 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ACE1AF;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.my-btn{
+    background-color: aliceblue;
+    color: #013220;
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #013220;
+    margin-bottom: 1rem;
+}
+
+.search-field{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-input{
+    outline: none;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    width: 25rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1rem;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-btn{
+    background-color: #013220;
+    color: #ACE1AF;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-btn:hover{
+    color: #013220;
+    background-color: #ACE1AF;
+}
+
+.books-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.bookcard-wrapper{
+    width: 20%;
+    margin: 1rem;
+}
+
+.load{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:800px) {
+    .header{
+        padding: 0.8rem;
+    }
+    
+    .my-btn{
+        width: auto;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .search-label{
+        font-size: 1.2rem;
+    }
+    
+    .search-input{
+        width: 20rem;
+    }
+    
+    .search-btn{
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+    
+    .bookcard-wrapper{
+        width: 25%;
+        margin: 2rem;
+    }
+    
+}
+
+
+@media screen and (max-width:600px){
+    .bookcard-wrapper{
+        width: 35%;
+        margin: 1rem;
+    }
+    
+    .books-display{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .search-input{
+        width: 85%;
+    }
+
+    .books-display{
+    
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .bookcard-wrapper{
+        width: 35%;
+        margin: 1rem;
+        margin-left: -1rem;
+    }
+}
+
